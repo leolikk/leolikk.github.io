@@ -82,9 +82,10 @@ body {
     text-align: center;
 }
 
-.cont:last-child{
+.cont:last-child {
     margin-bottom: 150px;
 }
+
 .cont h3 {
     font-family: Roboto;
 }
@@ -104,25 +105,29 @@ body {
     transition: 0.5s;
     filter: brightness(0.3);
 }
-.cont div img:hover{
-    transform: scale(0.95);
-    filter:none;
-}
-@media screen and (max-width:768px){
-    .cont div img {
-    width: 100%;
-    margin-top: 10px;
-}
-}
-footer{
-    height: 50px;
 
+.cont div img:hover {
+    transform: scale(0.95);
+    filter: none;
+}
+
+@media screen and (max-width:768px) {
+    .cont div img {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    height: 50px;
+    background-color: #fff;
     color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.17);
 }
-footer code{
+
+footer code {
     font-weight: 600;
 }
