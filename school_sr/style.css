@@ -1,0 +1,127 @@
+body {
+    background-color: #f2edff;
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 5;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.17);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    min-width: 300px;
+    font-size: 2vh;
+}
+
+.header .logo {
+    display: flex;
+}
+
+.header span {
+    font-family: Roboto;
+    cursor: default;
+    transition: 0.2s;
+    font-size: 2.3vh;
+}
+
+.logo div {
+    visibility: hidden;
+}
+
+.header span:hover {
+    color: palevioletred;
+    transform: translateY(-2px);
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px 15px;
+    transition: 0.2s;
+}
+
+.header a:hover {
+    border: 2px solid black;
+    background-color: #caceff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cont {
+    width: 100%;
+    min-height: 200px;
+    margin: 50px 0;
+    padding: 50px 0px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.42);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cont:last-child{
+    margin-bottom: 150px;
+}
+.cont h3 {
+    font-family: Roboto;
+}
+
+.cont div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cont div img {
+    width: 30%;
+    margin-top: 10px;
+    height: 20vh;
+    transition: 0.5s;
+    filter: brightness(0.3);
+}
+.cont div img:hover{
+    transform: scale(0.95);
+    filter:none;
+}
+@media screen and (max-width:768px){
+    .cont div img {
+    width: 100%;
+    margin-top: 10px;
+}
+}
+footer{
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.17);
+}
+footer code{
+    font-weight: 600;
+}
